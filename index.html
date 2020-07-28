@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   
     <title>Weather Forecaster!</title>
 </head>
 
@@ -18,13 +22,15 @@
 
 <br>
 
+<!-- City Search Button Container -->
+
 
 <div class="container">
     <div class="row">
         <div class="col-lg-4">
             <form>
-                <label for="fname">Search below for a City</label><br>
-                <input type="text" value="City Lookup">
+                <label for="fname">Search below for a City:</label><br>
+                <input type="text" id="city-input" value="City Lookup">
                 <button id="city-search">Search</button>
             </form>
         </div>
@@ -32,18 +38,20 @@
     </div>
 </div>
 
+
+
 <!-- New container for 5-day forecast -->
 
-<!-- <div class="container" id="forecast">
+<div class="container">
     <div class="row">
-
-        <div class="col-lg-8">
-            <p>This is test font</p>
-        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8">Test text</div>
     </div>
-</div> -->
+</div>
+<!-- end of 5-day forecast container -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 <script type="text/javascript"></script>
 </body>
 </html>
