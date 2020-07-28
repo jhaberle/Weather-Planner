@@ -8,9 +8,18 @@ nav {
     text-align: center;
     font-size: larger;
     font-family: 'Anton', sans-serif;
+    border-radius: 5px;
 
 }
 
-.form-control {
-    margin-left: -15px;
+#city-search {
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+
+#forecast {
+    float: right;
+    border: solid black 5px;
 }
