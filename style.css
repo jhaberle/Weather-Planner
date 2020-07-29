@@ -12,7 +12,7 @@ nav {
 
 }
 
-#city-search {
+#search-button {
     border-radius: 5px;
     background-color: blue;
     color: white;
@@ -24,7 +24,7 @@ nav {
     border: solid black 5px;
 }
 
-.side-bar {
+.button {
     border-radius: 5px;
     border: solid grey 2px;
     height: 50px;
