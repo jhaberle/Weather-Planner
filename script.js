@@ -1,4 +1,4 @@
-
+var citySearch = "";
 
 
 $("#city-search").on("click", function(){
