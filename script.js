@@ -9,9 +9,20 @@ function newButton (){
         newCity.addClass("button");
         $("#new-button").append(newCity);
         newCity.text(cities[i]);
-    
     }
-    
+    var APIKey = "166a433c57516f51dfab1f7edaed8413";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
+      "q=Bujumbura,Burundi&appid=" + APIKey;
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+
+    .then(function(response) {
+        console.log(queryURL);
+        console.log(response);
+    })
 }
 
 $(document).ready(function () {
@@ -31,9 +42,9 @@ $(document).ready(function () {
 
 
 
-});
+    });
 
-});
+})
 
 
 
