@@ -23,8 +23,8 @@ $(document).ready(function () {
         console.log("Cities " + cities);
         newButton();
 
-
-        var APIKey = "7794d8b2471a03493686efae31c07492";
+// current weather ajax call 
+    
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch +",Burundi&appid=7794d8b2471a03493686efae31c07492";
 
     $.ajax({
@@ -33,21 +33,39 @@ $(document).ready(function () {
     })
 
     .then(function(response) {
-        console.log(queryURL);
         console.log(response);
+    
+    $("#city").html("<h1>" + response.name + "</h1>");
+
+    var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+    $("#temp").text("Temperature (F) " + tempF.toFixed(2));
+
+    $("#humidity").text("Humidity: " + response.main.humidity);
+
+    $("#wind-speed").text("Wind Speed: " + response.wind.speed);
     })
 
-    //   add in a search weather function that will pass the weather from the ajax call into the dom -- we can do this in the newbutton()
+
+
+// 5 day forecast ajax call
 
 
 
 
+     var queryURL2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&appid=7794d8b2471a03493686efae31c07492";
 
+     $.ajax({
+        url: queryURL2,
+        method: "GET"
+    })
+    
+    .then(function(response2){
+        console.log(response2);
+    })
 
     });
 
 })
-
 
 
 

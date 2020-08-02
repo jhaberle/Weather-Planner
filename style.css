@@ -44,3 +44,8 @@ nav {
 button:hover {
     cursor: pointer;
 }
+
+#current-weather {
+    border: solid grey 5px;
+    border-radius: 5px;
+}
