@@ -47,12 +47,13 @@ $(document).ready(function () {
 
 
 
-// 5 day forecast ajax call
+// 5 day forecast ajax call----------------------
 
 
 
 
-     var queryURL2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&appid=7794d8b2471a03493686efae31c07492";
+
+     var queryURL2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch +",us&mode=xml&appid=7794d8b2471a03493686efae31c07492";
 
      $.ajax({
         url: queryURL2,
@@ -66,7 +67,6 @@ $(document).ready(function () {
     });
 
 })
-
 
 
 
