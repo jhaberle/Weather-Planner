@@ -3,25 +3,36 @@
 var cities = [];
 
 function newButton (){
-      $("new-button").empty();
+    var newCity = $("<div>");
+    newCity.empty();
     for (var i = 0; i < cities.length; i++){
-        var newCity = $("<div>");
         newCity.addClass("button");
-        newCity.attr("side-button", cities[i]);
-        newCity.text(cities[i]);
         $("#new-button").append(newCity);
-        // $(cities).empty();
+        newCity.text(cities[i]);
+    
     }
     
 }
 
-
-$("#search-button").on("click", function(event){
+$(document).ready(function () {
+    $("#search-button").on("click", function(event){
         event.preventDefault();
         var citySearch = $("#city-input").val().trim();
+        $("#city-input").val("");
         cities.push(citySearch);
+        console.log("CitySearch " + citySearch);
+        console.log("Cities " + cities);
         newButton();
-      
+
+    //   add in a search weather function that will pass the weather from the ajax call into the dom -- we can do this in the newbutton()
+
+
+
+
+
+
+});
+
 });
 
 
