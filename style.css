@@ -49,3 +49,8 @@ button:hover {
     border: solid grey 5px;
     border-radius: 5px;
 }
+
+#forecast {
+    border: solid grey 5px;
+    border-radius: 5px
+}
