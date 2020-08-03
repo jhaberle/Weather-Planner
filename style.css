@@ -6,9 +6,11 @@ nav {
     background: grey;
     color:white;
     text-align: center;
-    font-size: larger;
+    font-size: 30px;
     font-family: 'Anton', sans-serif;
     border-radius: 5px;
+    height: 45px;
+    padding-bottom: 5px;
 
 }
 

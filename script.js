@@ -16,7 +16,7 @@ function newButton (){
 
 
 $(document).ready(function () {
-    $("#search-button").on("click", function(event){
+   var weatherSearch = $("#search-button").on("click", function(event){
         event.preventDefault();
         var citySearch = $("#city-input").val().trim();
         window.localStorage.setItem('City', JSON.stringify(cities));
@@ -26,15 +26,7 @@ $(document).ready(function () {
         console.log("Cities " + cities);
         newButton();
 
-    $(".side-buttons").on("click", function(event) {
-        event.preventDefault();
-        var citySearch = $(".side-buttons").val().trim();
-        window.localStorage.setItem('City', JSON.stringify(cities));
-        $("#city-input").val("");
-        cities.push(citySearch);
-        console.log("CitySearch " + citySearch);
-        console.log("Cities " + cities);
-    })
+
 
 // current weather ajax call 
     
@@ -137,6 +129,11 @@ $("#forecast-date4").text(response2.list[27].dt_txt);
     })
 
     });
+
+
+    $(".side-buttons").on("click", weatherSearch);
+    
+
 
 })
 
