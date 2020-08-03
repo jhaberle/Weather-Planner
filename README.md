@@ -19,3 +19,5 @@ Once the user types in a city in the search bar and clicks the search button, th
 ## When multiple cities have been searched
 
 If the user searches multiple cities, buttons will be added to the side bar on the left hand side of the screen.
+
+![Weather Planner Multiple City](https://user-images.githubusercontent.com/59548398/89150905-eb32d880-d51c-11ea-97a4-927fe5b37246.PNG)
