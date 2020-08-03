@@ -13,6 +13,8 @@ function newButton (){
     
 }
 
+
+
 $(document).ready(function () {
     $("#search-button").on("click", function(event){
         event.preventDefault();
@@ -23,6 +25,16 @@ $(document).ready(function () {
         console.log("CitySearch " + citySearch);
         console.log("Cities " + cities);
         newButton();
+
+    $(".side-buttons").on("click", function(event) {
+        event.preventDefault();
+        var citySearch = $(".side-buttons").val().trim();
+        window.localStorage.setItem('City', JSON.stringify(cities));
+        $("#city-input").val("");
+        cities.push(citySearch);
+        console.log("CitySearch " + citySearch);
+        console.log("Cities " + cities);
+    })
 
 // current weather ajax call 
     
