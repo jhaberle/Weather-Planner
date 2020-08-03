@@ -17,6 +17,7 @@ $(document).ready(function () {
     $("#search-button").on("click", function(event){
         event.preventDefault();
         var citySearch = $("#city-input").val().trim();
+        window.localStorage.setItem('City', JSON.stringify(cities));
         $("#city-input").val("");
         cities.push(citySearch);
         console.log("CitySearch " + citySearch);

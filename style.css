@@ -45,12 +45,16 @@ button:hover {
     cursor: pointer;
 }
 
-#current-weather {
+/* #current-weather {
     border: solid grey 5px;
     border-radius: 5px;
-}
+} */
 
 #forecast {
     border: solid grey 5px;
     border-radius: 5px
+}
+
+.weather-card {
+    border: solid grey 2px;
 }
